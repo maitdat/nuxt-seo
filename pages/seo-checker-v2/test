@@ -1,0 +1,11 @@
+import { QuillEditor } from '@vueup/vue-quill'
+import '@vueup/vue-quill/dist/vue-quill.snow.css';
+
+export default {
+  components: {
+    QuillEditor
+  }
+}
+<template>
+    <QuillEditor v-model:content="form.description" content-type="html" theme="snow" toolbar="full" />
+</template>
